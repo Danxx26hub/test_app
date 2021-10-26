@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+
+{% block content %} 
+
+<h1 class="text-center">Hello, {{ name }}</h1>
+
+
+<ul id='elements'>
+
+    {% for element in elements %}
+        <li> {{element.upper()}} </li>
+    {% endfor %}
+</ul>
+
+{% endblock %}
